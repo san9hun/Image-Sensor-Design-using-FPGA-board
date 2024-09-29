@@ -1,0 +1,26 @@
+function [out]=TP()
+    test=zeros(64,64);
+
+    for i = 1 : 64
+        for j = 1 : 64 
+            if j <= 8
+                test(i,j) = 1;
+            elseif j > 8 & j <= 16
+                test(i,j) = 32;
+            elseif j > 16 & j <= 24
+                test(i,j) = 64;
+            elseif j > 24 & j <= 32
+                test(i,j) = 96;
+            elseif j > 32 & j <= 40
+                test(i,j) = 128;
+            elseif j > 40 & j <= 48
+                test(i,j) = 160;
+            elseif j > 48 & j <= 56
+                test(i,j) = 192;
+            elseif j > 56 & j <= 65
+                test(i,j) = 224;
+            end
+        end
+    end
+    out=test;
+end
