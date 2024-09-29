@@ -1,0 +1,36 @@
+Ftest = zeros(1, 64);
+
+for i = 1 : 64
+    if i <= 8
+        Ftest(1,i) = 32
+    elseif i <= 16
+         Ftest(1,i) = 64
+    elseif i <= 24
+        Ftest(1,i) = 96
+    elseif i <= 32
+         Ftest(1,i) = 128
+    elseif i <= 40
+         Ftest(1,i) = 160
+    elseif i <= 48
+        Ftest(1,i) = 192
+    elseif i <= 56
+         Ftest(1,i) = 224
+    elseif i <= 64
+         Ftest(1,i) = 255
+    end
+end
+cnt = 1;
+Hsync = 1;
+Vsync = 0;
+for clk = 1 : 64
+    if cnt == 9
+        Hsync = Hsync + 1;
+        cnt = 1;
+    end
+
+    testout(Hsync,cnt) = Ftest(1,clk);
+    cnt = cnt + 1;
+end
+ if Hsync == 8 
+        Vsync = Vsync + 1;
+ end
