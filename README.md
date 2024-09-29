@@ -12,7 +12,7 @@ Insu Park
 
 # Timing Control & Photoelectric Conversion
 Dongkun Lee
-Jungjin Woo
+Jinwoo Jung
 Jungwook Han
 
 # Special Thanks
