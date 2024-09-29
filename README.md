@@ -51,4 +51,4 @@ KiCad EDA (version: 6.0), EasyEDA Pro
 
 ## License
 
-[HYU](https://www.hanyang.ac.kr)
+None
